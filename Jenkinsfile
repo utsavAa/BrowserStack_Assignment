@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        sh 'javac -cp /Users/utsavbanerjee/Downloads/jar_files/testng-7.8.0.jar:. TestSDK.java'
+        sh 'javac -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestSDK.java'
       }
     }
 
