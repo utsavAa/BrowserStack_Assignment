@@ -5,7 +5,7 @@ pipeline {
     stage('Compile') {
       steps {
 	withMaven(maven: 'Maven 3.9.1') {
-        sh 'mvn clean compile -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8 -Dmaven.compiler.includeFiles=. TestSDK.java'
+        sh 'mvn clean compile -Dmaven.compiler.source=1.8 -Dmaven.compiler.target=1.8'
 	}
       }
     }
