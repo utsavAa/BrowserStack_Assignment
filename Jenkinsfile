@@ -4,7 +4,9 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
+	sh 'pwd'
         sh 'javac -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestOnSafari.java'
+	sh 'find . -name "*.class"'
       }
     }
 
