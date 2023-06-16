@@ -1,0 +1,32 @@
+userName: ut_GzwVyv
+accessKey: TnpCkJE1xpnzynvFaB6i
+framework: testng
+platforms:
+  - os: OS X
+    osVersion: Ventura
+    browserName: Chrome
+    browserVersion: 93.0
+  - os: OS X
+    osVersion: Ventura
+    browserName: Safari
+    browserVersion: 16.3
+  - os: OS X
+    osVersion: Ventura
+    browserName: Firefox
+    browserVersion: latest
+  - os: OS X
+    osVersion: Ventura
+    browserName: Edge
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: IE
+    browserVersion: 11.0
+parallelsPerPlatform: 2
+browserstackLocal: false
+buildName: bstack-demo-utsav
+buildIdentifier: ${BUILD_NUMBER}
+projectName: Utsav BrowserStack Sample
+testObservability: true
+networkLogs: true
+consoleLogs: info
