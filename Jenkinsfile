@@ -6,6 +6,8 @@ pipeline {
       steps {
 	sh 'pwd'
         sh 'javac -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestOnSafari.java'
+	sh 'javac -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. testOnFirefox.java'
+	sh 'javac -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestOnChrome.java'
 	sh 'find . -name "*.class"'
       }
     }
@@ -16,6 +18,8 @@ pipeline {
 usernameVariable: 
 'USERNAME')]) {
           sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack test.TestOnSafari'
+	 sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack test.testOnFirefox'
+	sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack test.TestOnChrome'
         }
       }
     }
