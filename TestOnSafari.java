@@ -41,13 +41,13 @@ public class TestOnSafari {
 //
 //
 ////		//Peforming actions on web elements
-				username = System.getenv("USERNAME");
+				username = System.getenv("assignment_username");
 				if (username == null) {
 					System.out.println("Username environment variable is not set");
 					return;
 				}
 				
-				password = System.getenv("PASSWORD");
+				password = System.getenv("assignment_password");
 				if (password == null) {
 					System.out.println("Password environment variable is not set");
 					return;
