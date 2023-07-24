@@ -39,8 +39,8 @@ public class TestOnChrome {
 //
 //
 ////		//Peforming actions on web elements
-				uName.sendKeys("username");
-				pswd.sendKeys("password");
+				uName.sendKeys("assignment_username");
+				pswd.sendKeys("assignment_password");
 //				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 				loginBtn1.click();
