@@ -12,7 +12,7 @@ import org.openqa.selenium.safari.SafariDriver;
 public class TestOnSafari {
 	String username = System.getenv("USERNAME");
     String password = System.getenv("PASSWORD");
-	public static void main(String[] args){
+	public void main(String[] args){
 		
 //		System.setProperty("webdriver.chrome.driver", "/Users/utsavbanerjee/Downloads/chromedriver 2");
 
