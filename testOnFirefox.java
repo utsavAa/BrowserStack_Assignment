@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class testOnFirefox {
 
-	public void main(String[] args){
+	public static void main(String[] args){
 		String username = System.getenv("USERNAME");
         String password = System.getenv("PASSWORD");
 		System.setProperty("webdriver.firefox.driver", "/Users/utsavbanerjee/Downloads/");
