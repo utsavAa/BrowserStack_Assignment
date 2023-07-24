@@ -14,14 +14,14 @@ pipeline {
 
     stage('Test') {
       steps {
-        //withCredentials([usernamePassword(credentialsId: 'userPwd', passwordVariable: 'PASSWORD', 
-//usernameVariable: 'USERNAME')]) {
-          sh 'java -DUSERNAME=${USERNAME} -DPASSWORD=${PASSWORD} -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestOnSafari.java'
-        sh 'java -DUSERNAME=${USERNAME} -DPASSWORD=${PASSWORD} -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. testOnFirefox.java'
-        sh 'java -DUSERNAME=${USERNAME} -DPASSWORD=${PASSWORD} -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestOnChrome.java'
-          //sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack TestOnSafari.java'
-	 //sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack testOnFirefox.java'
-	//sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack TestOnChrome.java'
+        withCredentials([usernamePassword(credentialsId: 'userPwd', passwordVariable: 'PASSWORD', 
+usernameVariable: 'USERNAME')]) {
+        //   sh 'java -DUSERNAME=${USERNAME} -DPASSWORD=${PASSWORD} -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestOnSafari.java'
+        // sh 'java -DUSERNAME=${USERNAME} -DPASSWORD=${PASSWORD} -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. testOnFirefox.java'
+        // sh 'java -DUSERNAME=${USERNAME} -DPASSWORD=${PASSWORD} -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:. TestOnChrome.java'
+          sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack TestOnSafari.java'
+	 sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack testOnFirefox.java'
+	sh 'java -cp /Users/utsavbanerjee/Downloads/selenium-server-4.9.1.jar:/Users/utsavbanerjee/Downloads/testng-7.4.0.jar:/Users/utsavbanerjee/.jenkins/workspace/BrowserStack TestOnChrome.java'
         }
       }
     }
