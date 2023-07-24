@@ -12,8 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TestOnChrome {
 
 	public static void main(String[] args){
-		String username = System.getenv("USERNAME");
-        String password = System.getenv("PASSWORD");
+		// String username = System.getenv("USERNAME");
+        // String password = System.getenv("PASSWORD");
 		System.setProperty("webdriver.chrome.driver", "/Users/utsavbanerjee/Downloads/chromedriver 2");
 
 		//Creating WebDriver instance
@@ -39,8 +39,8 @@ public class TestOnChrome {
 //
 //
 ////		//Peforming actions on web elements
-				uName.sendKeys("assignment_username");
-				pswd.sendKeys("assignment_password");
+				uName.sendKeys(username);
+				pswd.sendKeys(password);
 //				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 				loginBtn1.click();
