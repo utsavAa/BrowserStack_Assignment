@@ -10,9 +10,11 @@ import org.openqa.selenium.safari.SafariDriver;
 
 
 public class TestOnSafari {
-	String username = System.getenv("USERNAME");
-    String password = System.getenv("PASSWORD");
+		private static String username = System.getenv("USERNAME");
+        private static String password = System.getenv("PASSWORD");
 	public static void main(String[] args){
+		// String username = System.getenv("USERNAME");
+		// String password = System.getenv("PASSWORD");
 		
 //		System.setProperty("webdriver.chrome.driver", "/Users/utsavbanerjee/Downloads/chromedriver 2");
 

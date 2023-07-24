@@ -10,10 +10,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class TestOnChrome {
-
+		private static String username = System.getenv("USERNAME");
+        private static String password = System.getenv("PASSWORD");
 	public static void main(String[] args){
-		String username = System.getenv("USERNAME");
-        String password = System.getenv("PASSWORD");
+		// String username = System.getenv("USERNAME");
+        // String password = System.getenv("PASSWORD");
 		System.setProperty("webdriver.chrome.driver", "/Users/utsavbanerjee/Downloads/chromedriver 2");
 
 		//Creating WebDriver instance

@@ -10,10 +10,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class testOnFirefox {
-
+		private static String username = System.getenv("USERNAME");
+        private static String password = System.getenv("PASSWORD");
 	public static void main(String[] args){
-		String username = System.getenv("USERNAME");
-        String password = System.getenv("PASSWORD");
+		// String username = System.getenv("USERNAME");
+        // String password = System.getenv("PASSWORD");
 		System.setProperty("webdriver.firefox.driver", "/Users/utsavbanerjee/Downloads/");
 
 		//Creating WebDriver instance
