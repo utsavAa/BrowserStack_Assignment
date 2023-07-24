@@ -39,8 +39,8 @@ public class TestOnSafari {
 //
 //
 ////		//Peforming actions on web elements
-				uName.sendKeys("username");
-				pswd.sendKeys("password");
+				uName.sendKeys(username);
+				pswd.sendKeys(password);
 //				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 				loginBtn1.click();
