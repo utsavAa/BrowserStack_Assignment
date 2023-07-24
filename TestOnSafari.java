@@ -1,4 +1,5 @@
 package test;
+import os;
 
 import java.util.concurrent.TimeUnit;
 
@@ -41,13 +42,13 @@ public class TestOnSafari {
 //
 //
 ////		//Peforming actions on web elements
-				username = System.getenv("assignment_username");
+				username = os.environ.get("assignment_username");//System.getenv("assignment_username");
 				if (username == null) {
 					System.out.println("Username environment variable is not set");
 					return;
 				}
 				
-				password = System.getenv("assignment_password");
+				password = os.environ.get("assignment_password");//System.getenv("assignment_password");
 				if (password == null) {
 					System.out.println("Password environment variable is not set");
 					return;
