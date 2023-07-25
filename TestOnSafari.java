@@ -40,14 +40,14 @@ public class TestOnSafari {
 //
 //
 ////		//Peforming actions on web elements
-				uassignment_username = os.environ.get("assignment_username");//System.getenv("assignment_username");
-				if (username == null) {
+				assignment_username = os.environ.get("assignment_username");//System.getenv("assignment_username");
+				if (assignment_username == null) {
 					System.out.println("Username environment variable is not set");
 					return;
 				}
 				
 				assignment_password = os.environ.get("assignment_password");//System.getenv("assignment_password");
-				if (password == null) {
+				if (assignment_password == null) {
 					System.out.println("Password environment variable is not set");
 					return;
 				}
