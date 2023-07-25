@@ -10,8 +10,8 @@ import org.openqa.selenium.safari.SafariDriver;
 
 
 public class TestOnSafari {
-		private static String username;// = System.getenv("USERNAME");
-        private static String password;// = System.getenv("PASSWORD");
+		private static String assignment_username;// = System.getenv("USERNAME");
+        private static String assignment_password;// = System.getenv("PASSWORD");
 	public static void main(String[] args){
 		// String username = System.getenv("USERNAME");
 		// String password = System.getenv("PASSWORD");
@@ -52,8 +52,8 @@ public class TestOnSafari {
 					System.out.println("Password environment variable is not set");
 					return;
 				}
-				uName.sendKeys(username);
-				pswd.sendKeys(password);
+				uName.sendKeys(assignment_username);
+				pswd.sendKeys(assignment_password);
 //				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 				loginBtn1.click();
