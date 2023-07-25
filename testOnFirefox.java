@@ -40,14 +40,14 @@ public class testOnFirefox {
 //
 //
 ////		//Peforming actions on web elements
-				username = System.getenv("assignment_username");
-				if (username == null) {
+				assignment_username = System.getenv("assignment_username");
+				if (assignment_username == null) {
 					System.out.println("Username environment variable is not set");
 					return;
 				}
 				
-				password = System.getenv("assignment_password");
-				if (password == null) {
+				assignment_password = System.getenv("assignment_password");
+				if (assignment_password == null) {
 					System.out.println("Password environment variable is not set");
 					return;
 				}
