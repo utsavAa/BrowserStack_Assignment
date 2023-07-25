@@ -45,6 +45,7 @@ public class TestOnChrome {
 					System.out.println("Username environment variable is not set");
 					return;
 				}
+				System.out.println("assignment_username");
 				
 				assignment_password = System.getenv("assignment_password");
 				if (assignment_password == null) {
